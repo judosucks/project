@@ -16,7 +16,7 @@ const carSlices = createSlice({
             cost:action.payload.cost,
             id:nanoid() //generate id nanoid
          })
-         console.log(action,'state',state)
+         
         },
         removeCar(state,action){
          const updated = state.data.filter((car)=>{
