@@ -5,9 +5,10 @@ import CarForm from "./component/CarForm"
 function App(){
     return(
         <div>
+            <CarForm/>
             <CarList/>
             <CarValue/>
-            <CarForm/>
+            
             <CarSearch/>
         </div>
     )
