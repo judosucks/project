@@ -1,0 +1,10 @@
+{
+    "css.styleSheets": [
+      "node_modules/bulma/dist/css/bulma.css"
+    ],
+    
+        "css.enabledLanguages": ["html", "react","javascript"]
+      
+      
+  }
+  

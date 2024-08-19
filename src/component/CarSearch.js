@@ -9,7 +9,7 @@ function CarSearch(){
         return state.cars.searchTerm
     })
     const handleSearchTerm=(event)=>{
-        console.log('handlesearchterm')
+        console.log('handlesearchterm',searchTerm)
         dispatch(changeSearchTerm(event.target.value))
     }
 

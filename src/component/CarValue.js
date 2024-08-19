@@ -1,9 +1,7 @@
 import { useSelector } from "react-redux"
 
 function CarValue(){
-    const totalValue = useSelector(({form:{name,cost}})=>{
-        console.log('forms',name,'cost',cost)
-    })
+  
     const totalCost = useSelector(({cars:{data,searchTerm}})=>{ 
         return data.filter((car)=>
             car.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -11,9 +9,9 @@ function CarValue(){
     
   })
 
-  console.log(totalValue)
-    return (<div className="relative">
-        <div className="absolute right-10">
+
+    return (<div className="">
+        <div className="">
         總金額 NT${totalCost}</div></div>)
 
 }

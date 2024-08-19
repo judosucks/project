@@ -8,10 +8,13 @@ function CarList() {
         const filteredCars =  data.filter((car)=>
             car.name.toLowerCase().includes(searchTerm.toLowerCase())
         )
+        
         return {
             cars:filteredCars,
-            name:form.name
+            name:form.name,
+            
         }
+        
     })
 
     
@@ -20,11 +23,12 @@ function CarList() {
     }
 
     const renderedCars = cars.map((car) => {
-        console.log('form name',name)
+        
       const bold = name && car.name.toLowerCase().includes(name.toLowerCase())
-       console.log('bold',bold,'name',name)
+  
+       console.log('bold',bold,'data',name.toLowerCase(),'form.name',car.name.toLowerCase())
         return (
-            <div className={`panel${bold && 'bold'}`} key={car.id}>
+            <div className={`panel ${bold && 'bold'}`} key={car.id}>
                 <p>
                     {car.name}
                     - NT${car.cost}
